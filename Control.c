@@ -65,9 +65,9 @@ void ultra_sta(){
 	 delay_us(8);//8us
 	 j++; 
    }
-   Ultr_Temp+=340/2*j*10;//  模块最大可测距3m 
+   Ultr_Temp+=340/2*j*10; 
 		j=0;
-		delay_ms(60);//防止发射信号对回响信号的影响
+		delay_ms(60);
 	 }
 	 *p=Ultr_Temp/5/1000000;
 	 
